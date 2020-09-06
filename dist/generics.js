@@ -24,3 +24,18 @@ stringLightDatabase.add("Banana");
 stringLightDatabase.add("Grape");
 stringLightDatabase.remove("Banana");
 console.log(stringLightDatabase.get());
+const TmpDatabase = {
+    id: 3,
+    data: [32],
+};
+const fetchData = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve("hello");
+    }, 3000);
+});
+fetchData.then((data) => {
+    data.toUpperCase();
+});
+const vegetables = ["tomato", "broccoli", "asparagus"];
+let tmp;
+let tmp3;
